@@ -15,6 +15,7 @@
     "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-typegen": "^3.1.0",
     "gatsby-remark-images": "^7.5.0",
     "gatsby-remark-prismjs": "^7.5.0",
     "gatsby-remark-responsive-iframe": "^6.5.0",
@@ -48,6 +49,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "type-check": "tsc --noEmit"
   }
 }

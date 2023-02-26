@@ -7,6 +7,6 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
+exports.onRenderBody = ({ setHtmlAttributes }: any) => {
   setHtmlAttributes({ lang: `en` })
 }

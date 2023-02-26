@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, PageProps } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -8,60 +8,64 @@ import Seo from "../components/seo"
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
-}) => {
-  const siteTitle = site.siteMetadata?.title || `Title`
+}: PageProps<GatsbyTypes.BlogPostBySlugQuery>) => {
+  const siteTitle = site?.siteMetadata?.title || `Title`
+  const postTitle = post?.frontmatter?.title as string
+  const postDescription = post?.frontmatter?.description || post?.excerpt
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
+      <>
+        <article
+          className="blog-post"
+          itemScope
+          itemType="http://schema.org/Article"
         >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+          <header>
+            <h1 itemProp="headline">{postTitle}</h1>
+            <p>{post?.frontmatter?.date}</p>
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post?.html as string }}
+            itemProp="articleBody"
+          />
+          <hr />
+          <footer>
+            <Bio />
+          </footer>
+        </article>
+        <nav className="blog-post-nav">
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields?.slug || "/"} rel="prev">
+                  ← {previous.frontmatter?.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields?.slug || "/"} rel="next">
+                  {next.frontmatter?.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
+      </>
     </Layout>
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = ({ data: { markdownRemark: post } }: any) => {
   return (
     <Seo
       title={post.frontmatter.title}
