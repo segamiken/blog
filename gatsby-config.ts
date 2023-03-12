@@ -21,6 +21,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-typegen`,
     `gatsby-plugin-image`,
     {
