@@ -66,7 +66,6 @@ const titleStyle = css`
 const navigationStyle = css`
   display: flex;
   gap: var(--spacing-5);
-  margin-right: var(--spacing-6);
 `
 
 export default Header
