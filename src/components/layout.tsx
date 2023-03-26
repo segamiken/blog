@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, PageProps } from "gatsby"
 import { css, Global } from "@emotion/react"
 import { globalStyle } from "../styles/global"
+import Header from "./header"
 
 type Props = {
   location: PageProps["location"]
@@ -16,14 +17,10 @@ const Layout = ({ location, title, children }: Props) => {
   let header
 
   if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
+    header = <Header title={title} />
   } else {
     header = (
-      <Link className="header-link-home" to="/">
+      <Link css={headerLinkStyle} to="/">
         {title}
       </Link>
     )
@@ -53,6 +50,13 @@ const layoutBaseStyle = css`
 
 const headerBaseStyle = css`
   margin-bottom: var(--spacing-12);
+`
+
+const headerLinkStyle = css`
+  font-weight: var(--fontWeight-bold);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  font-size: var(--fontSize-2);
 `
 
 export default Layout

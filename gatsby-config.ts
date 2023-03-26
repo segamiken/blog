@@ -9,15 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `ken-engineer.net`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `ken`,
+      summary: `a software engineer living and working in Tokyo. I specialize in frontend development for SaaS products. In my free time, I enjoy traveling and watching sports.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Blog written by ken, a software engineer.`,
+    siteUrl: `https://ken-engineer.net/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ken__s__97`,
+      github: `segamiken`,
     },
   },
   plugins: [
@@ -104,7 +105,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "ken-engineer.net RSS Feed",
           },
         ],
       },
@@ -112,15 +113,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `ken-engineer.net`,
+        short_name: `ken-engineer.net`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/profile-pic.jpg`, // This path is relative to the root of the site.
       },
     },
   ],

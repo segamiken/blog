@@ -20,6 +20,7 @@ export const globalStyle = css`
     font-family: var(--font-body);
     font-size: var(--fontSize-1);
     color: var(--color-text);
+    background: var(--color-background);
   }
 
   footer {
