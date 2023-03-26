@@ -37,7 +37,7 @@ const Header = ({ title }: Props) => {
           rel="external noopener"
           aria-label={`ken twitter account link`}
         >
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <FontAwesomeIcon icon={faTwitter} size="2xl" />
         </a>
         <a
           href={`https://github.com/${social.github}`}
@@ -45,7 +45,7 @@ const Header = ({ title }: Props) => {
           rel="external noopener"
           aria-label={`ken GitHub account link`}
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faGithub} size="2xl" />
         </a>
       </nav>
     </div>

@@ -28,7 +28,7 @@ export const globalStyle = css`
   }
 
   hr {
-    background: var(--color-accent);
+    background: darkgray;
     height: 1px;
     border: 0;
   }

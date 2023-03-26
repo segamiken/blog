@@ -12,7 +12,7 @@ module.exports = {
     title: `ken-engineer.net`,
     author: {
       name: `ken`,
-      summary: `a software engineer living and working in Tokyo. I specialize in frontend development for SaaS products. In my free time, I enjoy traveling and watching sports.`,
+      summary: `Software Engineerとして東京で働いています。普段は、SaaSのフロントエンド開発を行なっています。\n旅行やスポーツ観戦が好きです。`,
     },
     description: `Blog written by ken, a software engineer.`,
     siteUrl: `https://ken-engineer.net/`,

@@ -4,6 +4,7 @@ import { Link, graphql, PageProps } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { css } from "@emotion/react"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -26,6 +27,7 @@ const BlogPostTemplate = ({
             <p>{post?.frontmatter?.date}</p>
           </header>
           <section
+            css={blogPostStyle}
             dangerouslySetInnerHTML={{ __html: post?.html as string }}
             itemProp="articleBody"
           />
@@ -113,5 +115,11 @@ export const pageQuery = graphql`
         title
       }
     }
+  }
+`
+
+const blogPostStyle = css`
+  ul {
+    padding-left: var(--spacing-5);
   }
 `
