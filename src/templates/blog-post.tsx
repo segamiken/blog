@@ -119,7 +119,8 @@ export const pageQuery = graphql`
 `
 
 const blogPostStyle = css`
-  ul {
+  ul,
+  ol {
     padding-left: var(--spacing-5);
   }
 `
