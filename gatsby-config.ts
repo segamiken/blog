@@ -17,7 +17,7 @@ module.exports = {
     description: `Blog written by ken, a software engineer.`,
     siteUrl: `https://ken-engineer.net/`,
     social: {
-      twitter: `ken__s__97`,
+      twitter: `ken_s_jp`,
       github: `segamiken`,
     },
   },
