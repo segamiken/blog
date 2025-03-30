@@ -138,11 +138,11 @@ export const globalStyle = css`
 
   blockquote {
     color: var(--color-text-light);
-    margin-left: calc(-1 * var(--spacing-6));
+    margin-left: 0em;
     margin-right: var(--spacing-8);
-    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
+    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     border-left: var(--spacing-1) solid var(--color-primary);
-    font-size: var(--fontSize-2);
+    font-size: var(--fontSize-1);
     font-style: italic;
     margin-bottom: var(--spacing-8);
   }
@@ -170,7 +170,7 @@ export const globalStyle = css`
   /* Link */
 
   a {
-    color: var(--color-primary);
+    color: var(--color-heading-black);
   }
 
   a:hover,
