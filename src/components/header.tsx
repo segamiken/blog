@@ -2,7 +2,7 @@ import * as React from "react"
 import { css } from "@emotion/react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 type Props = {
@@ -16,6 +16,7 @@ const Header = ({ title }: Props) => {
         siteMetadata {
           social {
             twitter
+            linkedin
             github
           }
         }
@@ -37,7 +38,15 @@ const Header = ({ title }: Props) => {
           rel="external noopener"
           aria-label={`ken twitter account link`}
         >
-          <FontAwesomeIcon icon={faTwitter} size="2xl" />
+          <FontAwesomeIcon icon={faXTwitter} size="2x" />
+        </a>
+        <a
+          href={`https://www.linkedin.com/in/${social.linkedin}`}
+          target="_blank"
+          rel="external noopener"
+          aria-label={`ken LinkedIn account link`}
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
         <a
           href={`https://github.com/${social.github}`}

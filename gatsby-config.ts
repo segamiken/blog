@@ -18,6 +18,7 @@ module.exports = {
     siteUrl: `https://ken-engineer.net/`,
     social: {
       twitter: `ken_s_jp`,
+      linkedin: `ken-segami`,
       github: `segamiken`,
     },
   },
