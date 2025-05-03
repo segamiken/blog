@@ -37,7 +37,7 @@ HelloTalkやTinderなどのアプリを使ってみたり、Airbnbで宿泊先�
 
 この学校、日本学生支援機構というちゃんとした独立行政法人が運営しており、学生も奨学金を獲得してきた優秀な人が多いです。皆さん、第3,4言語として日本語を勉強しています。
 
-[こちら](https://www.jasso.go.jp/ryugaku/jlec/ojlec/life/dormitory.html) から寮の詳細を見ることができます。ちなみに東京にもあります！！
+[こちら](https://www.jasso.go.jp/ryugaku/jlec/ojlec/life/dormitory.html)から寮の詳細を見ることができます。ちなみに東京にもあります！！
 
 #### レジデントアシスタントについて
 
