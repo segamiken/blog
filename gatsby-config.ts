@@ -9,12 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `ken-engineer.net`,
+    title: `Ken.log("life")`,
     author: {
-      name: `ken`,
+      name: `Ken`,
       summary: `Software Engineerとして東京で働いています。普段は、SaaSのフロントエンド開発を行なっています。\n旅行やスポーツ観戦が好きです。`,
     },
-    description: `Blog written by ken, a software engineer.`,
+    description: `Blog written by Ken, a software engineer.`,
     siteUrl: `https://ken-engineer.net/`,
     social: {
       twitter: `ken_s_jp`,
@@ -114,8 +114,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ken-engineer.net`,
-        short_name: `ken-engineer.net`,
+        name: `Ken.log("life")`,
+        short_name: `Ken.log("life")`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
